@@ -37,13 +37,13 @@
       "order": "1"
     },
     {
-      "name": "Decipher Zone",
-      "position": "Java Backend Developer",
+      "name": "Gaia Smart Cities",
+      "position": "Senior Software Developer",
       "url": "",
-      "startDate": "Jan'22",
-      "endDate": "Jun'22",
-      "summary": "Developed and maintained enterprise-level applications using Java and Spring Boot.",
-      "highlights": ["Java,Spring Boot,AWS"],
+      "startDate": "Jun'23",
+      "endDate": "Feb'24",
+      "summary": "Initiated and led the development of flagship product Sensez9 a cutting-edge scheduler designed for commerce industry to help automate the tax filing.",
+      "highlights": [],
       "order": "2"
     },
     {
@@ -52,36 +52,27 @@
       "url": "",
       "startDate": "Jul'22",
       "endDate": "May'23",
-      "summary": "Implemented microservices architecture on Springboot framework.\n Developed robust authentication and authorization protocols using OAuth2, enhancing security measures. \n Worked on interesting engineering problems based on SDLC while capitalizing on 7+ robust technical toolkit, including Springboot, Git, AWS, Cloud Deployment, and MySQL, to create and deliver top-tier solutions.",
+      "summary": "Implemented microservices architecture on Springboot framework.\n Developed robust authentication and authorization protocols using OAuth2, enhancing security measures.",
       "highlights": [],
       "order": "3"
     },
     {
-      "name": "Gaia Smart Cities",
-      "position": "Senior Software Developer",
+      "name": "Decipher Zone",
+      "position": "Java Backend Developer",
       "url": "",
-      "startDate": "Jun'23",
-      "endDate": "Feb'24",
-      "summary": "Initiated and leading the development of flagship product Sensez9 a cutting-edge scheduler designed for commerce industry to help automate the tax filing.",
-      "highlights": [],
+      "startDate": "Jan'22",
+      "endDate": "Jun'22",
+      "summary": "Developed and maintained enterprise-level applications using Java and Spring Boot.",
+      "highlights": ["Java, Spring Boot, AWS"],
       "order": "4"
-    }
-  ],
-  "publications": [
-    {
-      "name": "",
-      "publisher": "",
-      "releaseDate": "",
-      "url": "",
-      "summary": ""
     }
   ],
   "education": [
     {
       "institution": "Indian Institute of Technology, Roorkee",
-      "location": "Uttarakhand, India",
+      "location": "Roorkee, India",
       "url": "https://www.iitr.ac.in/",
-      "area": "Majoring in Aplied Mathematics",
+      "area": "Majoring in Applied Mathematics",
       "studyType": "Masters of Science",
       "startDate": "",
       "endDate": "",
