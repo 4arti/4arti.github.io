@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='#'>Indian Institute of Technology - Roorkee</a>
 
 profile:
-  align: right
+  align: center
   image: aarti.jpg
   image_circular: true # crops the image to make it circular
 
