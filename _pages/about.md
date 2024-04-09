@@ -6,7 +6,7 @@ subtitle: <a href='#'>Indian Institute of Technology - Roorkee</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: aarti.jpg
   image_circular: true # crops the image to make it circular
 
 news: false # includes a list of news items
