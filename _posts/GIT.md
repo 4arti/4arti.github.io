@@ -34,7 +34,8 @@ The format is inspired by: [Paper Summaries](https://www.cs.cmu.edu/~15712/summa
  - Text generation starts with a [BOS] token and continues in an auto-regressive manner until the [EOS] token or reaching maximum steps.
  - A seq2seq attention mask is applied, enabling text tokens to depend on preceding tokens and all image tokens, while image tokens can attend to each other.
  - This approach contrasts with unidirectional attention masks, where not every image token can rely on all others.
-![alt text](image-1.png)
+
+![Image-1](/assets/img/image-1.png)
 
 
 #### B. Pre-Training
@@ -84,7 +85,7 @@ Class names are interpreted as image captions, and the model is fine-tuned to pr
 Unlike existing methods, which pre-define vocabulary and use linear layers for prediction, this approach is generation-based.
 Beneficial for scenarios where new data and categories are introduced, allowing continuous training without adding new parameters.
 
-![alt text](image-2.png)
+![Caption](/assets/img/image-2.png)
 
 Captioning results of COCO-fine-tuned GIT on random samples whose prediction contains
 novel terms from the nocaps validation set. Novel terms, which are not in COCO training captions, are
