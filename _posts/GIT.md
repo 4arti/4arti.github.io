@@ -1,0 +1,106 @@
+---
+layout: post
+title: Paper Summary: GIT - A Generative Image-to-text Transformer for Vision and Language
+date: 2024-05-10 19:14:00-0400
+description: Transformer based geenrative vision-language model
+tags: ML
+categories: summaries
+related_posts: false
+featured: true
+published: true
+author: Aarti
+mermaid:
+  enabled: true
+---
+
+> **Objective** : Providing a summary of  [GIT: A Generative Image-to-text Transformer for Vision and Language.](https://arxiv.org/pdf/2205.14100)
+**Authors**: Jianfeng Wang, Zhengyuan Yang, Xiaowei Hu, Linjie Li, Kevin Lin, Zhe Gan, Zicheng Liu, Ce Liu, Lijuan Wang. Microsoft Cloud and AI
+
+
+
+The format is inspired by: [Paper Summaries](https://www.cs.cmu.edu/~15712/summaries.html)
+---
+### 1. Three Important Things
+
+#### A. Network Architecture
+ - The GIT network architecture consists of an image encoder and a text decoder.
+ - The image encoder is based on a contrastive pre-trained model, chosen for its superior performance in recent studies.
+ - It takes raw images as input and generates a compact 2D feature map, which is then flattened into a list of features.
+ - Additional linear and layernorm layers project these features into D dimensions, serving as input for the text decoder.
+ - The approach involves sequential task separation: first, pre-training the image encoder with contrastive tasks, followed by joint pre-training of both the image encoder and text decoder with generation tasks.
+ - The text decoder utilizes a transformer module with multiple transformer blocks containing self-attention and feed-forward layers.
+ - Text is tokenized, embedded, and augmented with positional encoding and layernorm layers.
+ - Image features are concatenated with text embeddings for input to the transformer module.
+ - Text generation starts with a [BOS] token and continues in an auto-regressive manner until the [EOS] token or reaching maximum steps.
+ - A seq2seq attention mask is applied, enabling text tokens to depend on preceding tokens and all image tokens, while image tokens can attend to each other.
+ - This approach contrasts with unidirectional attention masks, where not every image token can rely on all others.
+![alt text](image-1.png)
+
+
+#### B. Pre-Training
+Lnaguage modelling loss is used to train the model. Language modeling loss is a measure used in natural language processing tasks to assess the performance of a language model. It quantifies how well a language model predicts the next word or token in a sequence of text.
+
+In the context of neural networks, language modeling loss is typically computed using cross-entropy loss. Given a sequence of input tokens ​and the corresponding target tokens, the language modeling loss is calculated as the average cross-entropy loss across all tokens.
+
+LM (Language Modeling) is chosen over MLM (Masked Language Modeling) due to its efficiency and effectiveness, particularly for large-scale pre-training data. MLM involves masking a certain percentage of input tokens and predicting them in each iteration. However, to predict all tokens, multiple epochs are required, as the model iterates through the data several times to predict all masked tokens.
+
+In contrast, LM can predict all tokens in each iteration, making it more efficient for large-scale pre-training data. This efficiency is particularly beneficial when computational resources are limited, as fewer epochs are needed to train the model.
+
+
+
+#### C. Fine-tuning
+#####  Approach for image captioning task: 
+
+As the training data format is the same as that in pre-training, the same LM task is used to fine-tune GIT.
+
+##### Approach for Visual Question Answering (VQA):
+
+During fine-tuning, the model concatenates the question and the ground-truth answer into a special caption.
+Language modeling (LM) loss is applied only on the answer and the end-of-sequence ([EOS]) tokens.
+During inference, the question serves as the caption prefix, and the model predicts the completed part as the answer.
+
+##### Generative Model:
+
+The model is generative without pre-defining candidate answers, even during inference.
+Challenges are imposed on the model as it has to predict at least two correct tokens: one for the answer and another for [EOS].
+
+##### Scene-Text Related VQA:
+Existing approaches for scene-text related VQA tasks often leverage Optical Character Recognition (OCR) engines to generate key points or text information.
+The model does not rely on Optical Character Recognition (OCR) engines or dynamic pointer networks.
+Empirical evidence shows that the model learns to read scene text with large-scale pre-training.
+Achieves new state-of-the-art (SoTA) performance on scene text-related tasks without OCR.
+
+
+##### Adaptation to Video Domain:
+Although not specifically designed for videos, the model achieves competitive or new SoTA performance with a simple architecture change.
+Multiple frames from each video clip are sampled and independently encoded using the image encoder.
+Learnable temporal embeddings are added and concatenated with features from sampled frames.
+Final representation is utilized similarly to image representation for captioning and question answering.
+
+
+##### Application to Image Classification:
+The model's generation model is applied to image classification tasks.
+Class names are interpreted as image captions, and the model is fine-tuned to predict results in an auto-regressive manner.
+Unlike existing methods, which pre-define vocabulary and use linear layers for prediction, this approach is generation-based.
+Beneficial for scenarios where new data and categories are introduced, allowing continuous training without adding new parameters.
+
+![alt text](image-2.png)
+
+Captioning results of COCO-fine-tuned GIT on random samples whose prediction contains
+novel terms from the nocaps validation set. Novel terms, which are not in COCO training captions, are
+underlined.
+
+### 2. Limitation
+The model focuses on a pre training-and-fine tuning strategy to enhance absolute performance.
+However, there is uncertainty regarding how to precisely control the generated captions.
+Additionally, the method for performing in-context learning without updating parameters is not clearly defined.
+These challenges are acknowledged as areas for future research and development.
+
+### 3. Conclusion
+
+GIT, a generative model designed for mapping images to text descriptions within a large-scale dataset of image-text pairs.
+GIT achieves state-of-the-art performance in tasks like image and video captioning, as well as question answering, surpassing existing benchmarks.
+Notably, GIT outperforms human performance on the TextCaps dataset, marking a significant achievement in natural language understanding.
+A unique aspect of GIT is its approach to image classification, where it predicts label names directly, diverging from traditional methods relying on fixed vocabularies.
+This strategy proves advantageous, particularly in handling new category data, offering flexibility and adaptability in model predictions.
+
