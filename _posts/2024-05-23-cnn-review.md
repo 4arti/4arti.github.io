@@ -23,7 +23,7 @@ mermaid:
 
 ---
 
-# 1. Fundamentals of Convolutional Neural Networks(CNN)
+## 1. Fundamentals of Convolutional Neural Networks(CNN)
 
 At their core, CNNs leverage a series of convolutional layers, pooling layers, and fully connected layers to process input data. The convolutional layers apply learnable filters to input images, extracting features such as edges, textures, and patterns. Pooling layers then downsample the feature maps, reducing their spatial dimensions while preserving important features. Finally, fully connected layers combine these features to make predictions about the input data.
 
@@ -47,7 +47,7 @@ The basic components of a CNN architecture are:
 - Dropout
 - Fully Connected Layer
 
-## Convolutional Layer
+### Convolutional Layer
 
 A convolutional layer in a Convolutional Neural Network (CNN) performs feature extraction by applying a set of learnable filters (kernels) to the input data. Each filter scans across the input data, computing the dot product between its weights and the values in its receptive field, resulting in a feature map that highlights the presence of certain patterns or features in the input.
 
