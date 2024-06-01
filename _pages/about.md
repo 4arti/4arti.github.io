@@ -22,5 +22,5 @@ I have an extensive background in Mathematics with a master's degree in Applied 
 
 In order to explore the straddling world of numbers and code, I also dabbled into software engineering across various startup landscapes for two years. I have had an enriching learning experience with Java tech stack.
 
-My love for Mathematics made me curious about machine learning and I decided to pursue machine learning as a collaborative researcher at the Department of Mathematics and Soft-Computing, IIT Roorkee.
+My love for Mathematics made me curious about machine learning and I decided to pursue machine learning as a collaborative researcher at the Department of Mathematics and Scientific Computing, IIT Roorkee.
 

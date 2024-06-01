@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Building an image classifier using transfer learning
+title: Image classifier using transfer learning
 description: Transfer learning from pre-trained MobileNetV2
-img: assets/img/tl.jpg
+img: assets/img/code.jpg
 importance: 1
 category: Deep Learning
 related_publications:

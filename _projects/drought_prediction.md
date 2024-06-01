@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Drought prediction using EfficientNet model on satellite images
+title: Drought prediction using satellite images
 description: classifying satellite images based on forage count, likelyhood of drought is inversely correlated to the forage count.
-img: assets/img/drought_image.jpg
+img: assets/img/satellite.jpg
 importance: 1
 category: Deep Learning
 related_publications:
