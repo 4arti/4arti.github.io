@@ -173,6 +173,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  summaries:
+    output: true
+    permalink: /summaries/:path/  
 
 announcements:
   enabled: false
