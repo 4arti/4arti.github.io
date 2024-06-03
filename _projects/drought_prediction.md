@@ -3,7 +3,7 @@ layout: page
 title: Drought prediction using satellite images
 description: classifying satellite images based on forage count, likelyhood of drought is inversely correlated to the forage count.
 img: assets/img/satellite.jpg
-importance: 1
+importance: 2
 category: Deep Learning
 related_publications:
 ---
