@@ -4,7 +4,7 @@
     "label": "Software Engineer/Researcher",
     "image": "",
     "email": "sharmaaarti50528@gmail.com",
-    "summary": "Machine Learning Researcher currently working on image captioning using deep learning models",
+    "summary": "Machine Learning Researcher currently working on image captioning using deep learning models, reinforcement learning and application of computer vision in infrared small target detection.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -41,7 +41,7 @@
       "position": "Senior Software Developer",
       "url": "",
       "startDate": "Jun'23",
-      "endDate": "Feb'24",
+      "endDate": "Mar'24",
       "summary": "Initiated and led the development of flagship product Sensez9 a cutting-edge scheduler designed for commerce industry to help automate the tax filing.",
       "highlights": [],
       "order": "2"
@@ -82,39 +82,18 @@
   ],
   "projects": [
     {
-      "name": "DeepGlobe Land Cover Classification",
-      "summary": "Classifying land coverage using remote sensing satellite data.",
+      "name": "Drought prediction using satellite images",
+      "summary": "classifying satellite images based on forage count, likelyhood of drought is inversely correlated to the forage count.",
       "highlights": ["Computer Vision", "Deep Learning"],
       "startDate": "2024",
-      "url": "https://github.com/hrishikeshh/DeepGlobe-Land-Cover-Classification"
+      "url": "https://sharma-aarti.github.io/projects/drought_prediction/"
     },
     {
-      "name": "Know Your Rice",
-      "summary": "Rice classification using Deep learning. The real and practical use of rice type detection from white grains have several applications in the food industry, quality control processes, and consumer preferences",
-      "highlights": ["Agri-tech", "Deep Learning"],
+      "name": "Image classifier using transfer learning",
+      "summary": "Transfer learning from pre-trained MobileNetV2",
+      "highlights": ["Deep Learning","Transfer Learning"],
       "startDate": "2023",
-      "url": "https://hrish.in/projects/rice/"
-    },
-    {
-      "name": "Blight Classification",
-      "summary": "Early blight and late blight, two serious diseases of potato, are widely distributed. We are detecting the stage of the blight using deep learning to help farmers take appropriate preventive actions.",
-      "highlights": ["Agri-tech", "Deep Learning"],
-      "startDate": "2023",
-      "url": "https://hrish.in/projects/blight/"
-    },
-    {
-      "name": "GitLet",
-      "summary": " implemented a version-control system that mimics some of the basic features of the popular system Git. Mine is smaller and simpler, however, so we have named it Gitlet.",
-      "highlights": ["Version Control", "Java"],
-      "startDate": "2021",
-      "url": "https://github.com/hrishikeshh/Gitlet"
-    },
-    {
-      "name": "Vinci",
-      "summary": "Vinci is a Java Genetic Algorithm implementation with a focus on ease of use and extensibility.",
-      "highlights": ["Genetic Algorithms", "Java"],
-      "startDate": "2022",
-      "url": "https://github.com/hrishikeshh/vinci"
+      "url": "https://sharma-aarti.github.io/projects/transfer_learning/"
     }
   ],
   "skills": [
@@ -161,8 +140,7 @@
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Object-Oriented Programming (OOP)",
-        "Agile Methodologies: Scrum, Kanban",
-        "Test-Driven Development (TDD)",
+        "Agile Methodologies: Scrum",
         "Continuous Integration/Continuous Deployment (CI/CD)",
         "Containerization: Docker",
         "Cloud Platforms: AWS"
