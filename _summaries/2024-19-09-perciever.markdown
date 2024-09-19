@@ -35,15 +35,6 @@ This technique provides two benefits:
 - **Reduced Parameter Count**: Weight sharing can result in a 10x reduction in parameters compared to non-weight-shared models.
 - **Improved Generalization**: Sharing weights helps the model generalize better on unseen data by reducing overfitting. The architecture essentially operates like an RNN but processes input repeatedly rather than over time.
 
-
-{% include figure.html 
-    path="/assets/img/perceiver.jpg"
-    width="600px"
-    class="z-depth-1"
-%}
-
-
-
 ## A Glaring Deficiency
 
 ### Lack of Explicit Spatial Understanding
