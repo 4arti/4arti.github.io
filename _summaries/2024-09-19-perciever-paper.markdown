@@ -23,7 +23,7 @@ The latent Transformer has a complexity of O(N²), which is much smaller than th
 
 ---
 {% include figure.html 
-    path="/assets/img/perceiver.jpg"
+    path="/assets/img/perciever.jpg"
     width="600px"
     class="z-depth-1"
     caption="Taxonomy of the 6 core challenges in multimodal machine learning"
