@@ -4,12 +4,6 @@ title: "Perceiver: General Perception with Iterative Attention"
 giscus_comments: false
 bib_id: jaegle2021perceivergeneralperceptioniterative
 ---
-The *Perceiver* architecture presents a novel approach to processing high-dimensional data like images, video, and audio by using a cross-attention mechanism combined with a Transformer. Unlike traditional architectures, the Perceiver doesn't rely on domain-specific assumptions like convolutional neural networks (CNNs). In this blog, we will break down the Perceiver architecture, highlighting three important aspects, a glaring deficiency, and conclude with its potential impact.
-
----
-## Abstract
-Biological systems perceive the world by simultaneously processing high-dimensional inputs from modalities as diverse as vision, audition, touch, proprioception, etc. The perception models used in deep learning on the other hand are designed for individual modalities, often relying on domain-specific assumptions such as the local grid structures exploited by virtually all existing vision models. These priors introduce helpful inductive biases, but also lock models to individual modalities. In this paper we introduce the Perceiver - a model that builds upon Transformers and hence makes few architectural assumptions about the relationship between its inputs, but that also scales to hundreds of thousands of inputs, like ConvNets. The model leverages an asymmetric attention mechanism to iteratively distill inputs into a tight latent bottleneck, allowing it to scale to handle very large inputs. We show that this architecture is competitive with or outperforms strong, specialized models on classification tasks across various modalities: images, point clouds, audio, video, and video+audio. The Perceiver obtains performance comparable to ResNet-50 and ViT on ImageNet without 2D convolutions by directly attending to 50,000 pixels. It is also competitive in all modalities in AudioSet.
-
 
 ## Three Important Things
 
@@ -27,6 +21,15 @@ After the cross-attention module maps the input into a lower-dimensional latent 
 
 The latent Transformer has a complexity of O(N²), which is much smaller than the complexity of processing high-dimensional input data directly. By decoupling input size from the depth of the Transformer, the architecture can scale much deeper. For example, in their experiments, the authors built models with up to 48 Transformer layers without becoming computationally prohibitive.
 
+---
+{% include figure.html 
+    path="/assets/img/summaries/perceiver.jpg"
+    width="600px"
+    class="z-depth-1"
+    caption="Taxonomy of the 6 core challenges in multimodal machine learning"
+%}
+---
+
 ### 3. Weight Sharing for Parameter Efficiency
 
 To reduce the overall number of parameters and prevent overfitting, the Perceiver architecture uses weight sharing between the different layers of the Transformer blocks. This recurrent-like approach enables the same cross-attention and Transformer layers to be applied repeatedly, unrolling the model in depth.
@@ -37,7 +40,7 @@ This technique provides two benefits:
 
 ## A Glaring Deficiency
 
-### Lack of Explicit Spatial Understanding
+#### Lack of Explicit Spatial Understanding
 
 Despite its strengths, one of the most glaring deficiencies of the Perceiver architecture is its inherent **lack of spatial inductive bias**. Traditional CNNs, by design, capture spatial hierarchies using convolutions that operate over local neighborhoods in images. This means CNNs naturally understand how nearby pixels relate to one another, making them effective at capturing spatial relationships and patterns.
 
