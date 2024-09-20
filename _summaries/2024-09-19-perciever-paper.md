@@ -21,14 +21,14 @@ After the cross-attention module maps the input into a lower-dimensional latent 
 
 The latent Transformer has a complexity of O(N²), which is much smaller than the complexity of processing high-dimensional input data directly. By decoupling input size from the depth of the Transformer, the architecture can scale much deeper. For example, in their experiments, the authors built models with up to 48 Transformer layers without becoming computationally prohibitive.
 
-<!-- ---
+---
 {% include figure.html 
     path="/assets/img/perciever.jpg"
     width="600px"
     class="z-depth-1"
     caption="Taxonomy of the 6 core challenges in multimodal machine learning"
 %}
---- -->
+---
 
 #### 3. Weight Sharing for Parameter Efficiency
 
@@ -54,4 +54,3 @@ The Perceiver architecture marks a significant step forward in handling large-sc
 
 Despite this, the Perceiver holds promise for applications requiring general, scalable models capable of handling diverse input types, including audio, images, and video. The model's flexibility and ability to process large-scale data while keeping computational costs manageable make it an exciting development in the field of machine learning architectures.
 
-<!-- ### TEST -->
