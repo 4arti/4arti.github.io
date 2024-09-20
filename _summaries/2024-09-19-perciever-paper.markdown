@@ -53,3 +53,5 @@ In contrast, the Perceiver treats the input as an unordered set of bytes without
 The Perceiver architecture marks a significant step forward in handling large-scale and multimodal datasets. Its cross-attention mechanism for input compression and efficient processing in latent space makes it a powerful alternative to traditional models like CNNs and Vision Transformers. However, its generality comes at a cost: the lack of inherent spatial understanding limits its applicability to certain tasks.
 
 Despite this, the Perceiver holds promise for applications requiring general, scalable models capable of handling diverse input types, including audio, images, and video. The model's flexibility and ability to process large-scale data while keeping computational costs manageable make it an exciting development in the field of machine learning architectures.
+
+### TEST
