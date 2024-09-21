@@ -22,12 +22,11 @@ After the cross-attention module maps the input into a lower-dimensional latent 
 The latent Transformer has a complexity of O(N²), which is much smaller than the complexity of processing high-dimensional input data directly. By decoupling input size from the depth of the Transformer, the architecture can scale much deeper. For example, in their experiments, the authors built models with up to 48 Transformer layers without becoming computationally prohibitive.
 
 ---
-{% include figure.html 
-    path="/assets/img/perciever.jpg"
-    width="600px"
-    class="z-depth-1"
-    caption="Taxonomy of the 6 core challenges in multimodal machine learning"
-%}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/perciever.jpg" title="Perceiver Architecture" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 ---
 
 #### 3. Weight Sharing for Parameter Efficiency
