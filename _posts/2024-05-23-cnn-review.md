@@ -23,6 +23,26 @@ mermaid:
 
 ---
 
+## Table of Contents
+1. [Fundamentals of Convolutional Neural Networks (CNN)](#fundamentals-of-convolutional-neural-networks-cnn)
+2. [Evolution of CNN Architectures](#evolution-of-cnn-architectures)
+   - [LeNet-5 (1998)](#lenet-5-1998-the-pioneer)
+   - [AlexNet (2012)](#alexnet-2012-the-breakthrough)
+   - [VGGNet (2014)](#vggnet-2014-deeper-but-simpler)
+   - [GoogLeNet (Inception, 2014)](#googlenet-inception-2014-smarter-not-just-deeper)
+   - [ResNet (2015)](#resnet-2015-deeper-networks-without-the-pain)
+   - [EfficientNet (2019)](#efficientnet-2019-scaling-done-right)
+3. [Practical Applications of CNN Architectures](#practical-applications-of-cnn-architectures)
+   - [LeNet-5 (1998)](#31-lenet-5-1998)
+   - [AlexNet (2012)](#32-alexnet-2012)
+   - [VGGNet (2014)](#33-vggnet-2014)
+   - [GoogLeNet (Inception, 2014)](#34-googlenet-inception-2014)
+   - [ResNet (2015)](#35-resnet-2015)
+   - [EfficientNet (2019)](#36-efficientnet-2019)
+4. [References](#references)
+5. [Conclusion](#conclusion)
+
+---
 ## 1. Fundamentals of Convolutional Neural Networks(CNN)
 
 At their core, CNNs leverage a series of convolutional layers, pooling layers, and fully connected layers to process input data. The convolutional layers apply learnable filters to input images, extracting features such as edges, textures, and patterns. Pooling layers then downsample the feature maps, reducing their spatial dimensions while preserving important features. Finally, fully connected layers combine these features to make predictions about the input data.
@@ -51,7 +71,7 @@ The basic components of a CNN architecture are:
 
 A convolutional layer in a Convolutional Neural Network (CNN) performs feature extraction by applying a set of learnable filters (kernels) to the input data. Each filter scans across the input data, computing the dot product between its weights and the values in its receptive field, resulting in a feature map that highlights the presence of certain patterns or features in the input.
 
-
+---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/convolution_operation.png" title="Convolution Operation" class="img-fluid rounded z-depth-1" %}
@@ -64,8 +84,7 @@ A convolutional layer in a Convolutional Neural Network (CNN) performs feature e
 
 <br>
 Key aspects of a convolutional layer:
-
-<br> 
+</br>
 
 **Feature Detection**: The convolutional filters detect various features such as edges, textures, and shapes present in the input data.
 
