@@ -6,7 +6,7 @@ permalink: /projects/
 nav: true
 nav_order: 3
 display_categories: [Deep Learning, Research, Software]
-horizontal: true
+horizontal: flase
 ---
 
 <!-- pages/projects.md -->
