@@ -305,9 +305,13 @@ Convolutional Neural Networks (CNNs) have been instrumental in solving real-worl
 
 **Use Case**: Deployed in real-time image recognition on mobile devices, drones, and healthcare diagnostics with limited computational resources.
 
----
 
-## 4. References
+## 4. Conclusion
+
+From simple digit recognition to powering sophisticated systems in healthcare, transportation, and entertainment, CNNs have proven to be remarkably versatile. The architectures discussed above, including LeNet-5, AlexNet, VGGNet, GoogLeNet, ResNet, and EfficientNet, have opened up endless possibilities for applying deep learning in practical, real-world scenarios. Whether you are working on a mobile application or deploying a large-scale object detection system, there's a CNN architecture tailored for your needs.
+
+
+## 5. References
 
 - LeNet-5: Yann LeCun, et al. “Gradient-Based Learning Applied to Document Recognition.” Proceedings of the IEEE, 1998. [LeNet Paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
   
@@ -322,10 +326,6 @@ Convolutional Neural Networks (CNNs) have been instrumental in solving real-worl
 - EfficientNet: Mingxing Tan and Quoc V. Le. “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks.” ICML, 2019. [EfficientNet Paper](https://arxiv.org/pdf/1905.11946.pdf)
   
 ---
-
-## 5. Conclusion
-
-From simple digit recognition to powering sophisticated systems in healthcare, transportation, and entertainment, CNNs have proven to be remarkably versatile. The architectures discussed above, including LeNet-5, AlexNet, VGGNet, GoogLeNet, ResNet, and EfficientNet, have opened up endless possibilities for applying deep learning in practical, real-world scenarios. Whether you are working on a mobile application or deploying a large-scale object detection system, there's a CNN architecture tailored for your needs.
 
 
 

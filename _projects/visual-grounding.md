@@ -2,13 +2,12 @@
 layout: page
 title: Visual Grounding with Multimodal Attention and Grad-CAM in Image-Text Alignment
 description: FLAVA's image-text alignment by observing attention maps and Grad-CAM outputs in visual grounding
-img: assets/img/code.jpg
+img: assets/img/multimodal.jpg
 importance: 3
 category: Research
 related_publications:
 ---
 
-# Visual Grounding with Multimodal Attention and Grad-CAM in Image-Text Alignment
 
 Visual grounding is a task in computer vision that involves identifying and localizing objects in an image based on a given natural language description. The goal is to "ground" or match a specific object or region in the image that corresponds to the description or referring expression.
 
@@ -305,11 +304,13 @@ model = FlavaModel.from_pretrained("facebook/flava-full").eval()
 for layer_num, layer in enumerate(model.image_model.encoder.layer):
     layer.attention.attention.register_forward_hook(get_attention_weights_hook)
 ```
+---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/flavahuggingface.PNG" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+---
 
 ## **Run Visualization on Random Images**
 
@@ -317,117 +318,118 @@ for layer_num, layer in enumerate(model.image_model.encoder.layer):
 # Process and visualize random images
 process_random_images(captions_data, processor, model, num_images=10)
 ```
+---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1g.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1g.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1a.PNG" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2g.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1a.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2a.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2g.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
+---
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2a.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3g.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/3g.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3a.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/3a.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
+---
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/4g.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/4g.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/4a.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/4a.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/6g.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/6g.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/6a.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/6a.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/7g.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/7g.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/7a.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/7a.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/8g.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
+---
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/8a.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+---
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/9g.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/8g.PNG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/9a.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/8a.PNG" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/9g.PNG" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/9a.PNG" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
+---
 ## **Conclusions**
 
 By looking at the visual output of the Grad-CAM heatmap and the attention map applied to the image-2 of a band performing with flame-throwing effects, we can draw several technical insights:
