@@ -304,12 +304,14 @@ model = FlavaModel.from_pretrained("facebook/flava-full").eval()
 for layer_num, layer in enumerate(model.image_model.encoder.layer):
     layer.attention.attention.register_forward_hook(get_attention_weights_hook)
 ```
----
+
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/flavahuggingface.PNG" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
 ---
 
 ## **Run Visualization on Random Images**
@@ -440,7 +442,6 @@ By looking at the visual output of the Grad-CAM heatmap and the attention map ap
 
 The Grad-CAM heatmap highlights the areas in the image where the model's attention is most concentrated. The color variations from blue to red indicate different levels of focus, with red being the highest activation.
 The overlaid heatmap shows that the model is strongly focusing on the flame-throwing areas and the center stage where the band is performing. This suggests that the model recognizes the key elements in the image—the performers and the dramatic flames—as important visual cues.
-Model Understanding:
 
 The strong activation over the flame-throwers suggests that the model associates "*flames*" with the text "*flame throwing effects*" in the caption. The attention on the center, where the lead performer stands, suggests that the model also recognizes a human figure, which is in line with the "*band dressed in black*" part of the caption.
 This implies that the model is correctly aligning the visual cues (flames and performers) with the descriptive elements in the text.
@@ -485,5 +486,5 @@ While the model performs well in this case, it may sometimes overlook finer deta
 
 This visualization technique can be especially useful in domains like content-based image retrieval, video captioning, and human-computer interaction. By ensuring that a model's attention aligns well with relevant content, one can improve the accuracy and relevance of AI systems interpreting visual data.
 
-## References
+## **References**
 - FLAVA Paper: [FLAVA: A Foundational Language and Vision Alignment Model](https://arxiv.org/abs/2112.04482)
