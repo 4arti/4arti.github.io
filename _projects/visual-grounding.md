@@ -3,8 +3,8 @@ layout: page
 title: Visual Grounding with Multimodal Attention and Grad-CAM in Image-Text Alignment
 description: FLAVA's image-text alignment by observing attention maps and Grad-CAM outputs in visual grounding
 img: assets/img/code.jpg
-importance: 1
-category: Multimodal-LLM
+importance: 3
+category: Research
 related_publications:
 ---
 
