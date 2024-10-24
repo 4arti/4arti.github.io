@@ -5,4 +5,4 @@ inline: true
 related_posts: true
 ---
 
-Won the Best Poster Presentation Award at IIT Roorkee for my work on 'Autonomous Drone Swarm Navigation using Reinforcement Learning'.
+🏆 Best Poster Presentation Award for `Autonomous Drone Swarm Navigation using Reinforcement Learning`
