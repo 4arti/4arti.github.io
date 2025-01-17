@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://sharma-aarti.github.io/sitemap.xml
+Sitemap: https://4arti.github.io/sitemap.xml
