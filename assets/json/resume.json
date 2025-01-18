@@ -20,8 +20,8 @@
       },
       {
         "network": "GitHub",
-        "username": "sharma-aarti",
-        "url": "https://github.com/sharma-aarti"
+        "username": "4arti",
+        "url": "https://github.com/4arti"
       }
     ]
   },
@@ -86,14 +86,14 @@
       "summary": "classifying satellite images based on forage count, likelyhood of drought is inversely correlated to the forage count.",
       "highlights": ["Computer Vision", "Deep Learning"],
       "startDate": "2024",
-      "url": "https://sharma-aarti.github.io/projects/drought_prediction/"
+      "url": "https://4arti.github.io/projects/drought_prediction/"
     },
     {
       "name": "Image classifier using transfer learning",
       "summary": "Transfer learning from pre-trained MobileNetV2",
       "highlights": ["Deep Learning","Transfer Learning"],
       "startDate": "2023",
-      "url": "https://sharma-aarti.github.io/projects/transfer_learning/"
+      "url": "https://4arti.github.io/projects/transfer_learning/"
     }
   ],
   "skills": [
